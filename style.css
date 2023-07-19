@@ -471,6 +471,9 @@ footer > p{
     nav button{
         padding: 15px 20px;
     }
+    nav img{
+        width: 70px;
+    }
     /* main section start here  */
     /* banner section start here  */
     .banner-container {
