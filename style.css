@@ -38,6 +38,7 @@ h3{
 .primary-btn{
     border-radius: 48px;
     border: none;
+    font-size: 20px;
     padding: 20px 40px;
 }
 span{
@@ -155,7 +156,7 @@ nav  button i{
     justify-content: space-between;
     padding: 50px 0;
 }
-.center{
+.center h2,p{
     text-align: center;
 }
 .img-container{
@@ -228,6 +229,7 @@ nav  button i{
 }
 .play-online p, h2{
     color: var(--primary-color-);
+    text-align: left;
 }
 .play-online p{
     padding: 25px 0; 
@@ -245,9 +247,53 @@ nav  button i{
 }
 /* Careers section start here  */
 .careers{
-    height: 600px;
-    background-image: url(./images/Vector\ 2.png), url(./images/Rectangle\ .png);
-    background-repeat: no-repeat;
-    background-position: top right;
+    background-image:  url(./images/Rectangle\ .png);
+    background-repeat:  no-repeat ;
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+}
+.careers_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.careers_container section{
+    width: 50%;
+}
+.careers_flex{
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.careers h2{
+    color: #fff;
+    padding: 25px 0;
+}
+.careers button{
+    color: #F948B2;
+}
+/* button section start here  */
+.btn-list{
+    border-radius: 48px;
+    border: none;
+    font-size: 20px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.btn-list:hover{
+    border: 2px solid #F948B2;
+    color: #F948B2;
+}
+.buttons{
+    padding: 100px 0;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 /* footer section start here  */
