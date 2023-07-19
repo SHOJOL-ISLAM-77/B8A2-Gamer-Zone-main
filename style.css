@@ -1,0 +1,253 @@
+/* common code  */
+*{
+    font-family: 'Work Sans';
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+}
+.primary-gradient{
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.container{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+:root{
+    --text-gray: #534C64;
+    --primary-color-: #0B0223;
+}
+h1{
+    font-size: 95px;
+    font-weight: 900;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 20px 0;
+}
+h2{
+    font-size: 48px;
+}
+h3{
+    font-size: 32px;
+}
+.primary-btn{
+    border-radius: 48px;
+    border: none;
+    padding: 20px 40px;
+}
+span{
+    font-size: 48px;
+    font-weight: 700;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+/* header section start here  */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0;
+}
+nav h2{
+    display: inline;
+    font-weight: 700;
+}
+nav li{
+    display: inline;
+    padding-left: 50px;
+}
+nav li a{
+    color: var(--primary-color-);
+}
+nav button{
+    padding: 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: rgba(11, 2, 35, 0.10);
+}
+nav  button i{
+    padding: 0 10px;
+    font-size: 20px;
+    color: red;
+}
+/* main section start here  */
+/* banner section start here  */
+.banner-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.banner{
+    background-image: url(./images/Group\ 14.png);
+    background-repeat: no-repeat;
+    bottom: 0;
+    left: 0;
+}
+.banner p{
+    padding: 7px 0px 7px 30px;
+}
+.play {
+    background: url(./images/play.png) no-repeat center left 3px;
+}
+.download{
+    background: url(./images/download.png) no-repeat center left 3px;
+}
+.support{
+    background: url(./images/man.png) no-repeat center left 3px;
+}
+.banner button{
+    margin: 20px 20px 20px 0;
+}
+.first-btn{
+    background-color: #F948B2;
+    color: white
+}
+.second-btn{
+    background-color: #4EC5F7;
+    color: #fff;
+}
+/* we are gamer section start here  */
+.we-are-gamer{
+    background-color: #FFF9FC;
+}
+.we-are-gamer_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: right;
+    padding: 100px 0;
+}
+.we-are-gamer_container section{
+    width: 50%;
+}
+.we-are-gamer_container h2{
+    padding: 25px 0;
+}
+.we-are-gamer_container p{
+    color: var(--text-gray);   
+}
+.we-are-gamer_container button{
+    background-color: #F948B2;
+    color: white;
+    margin: 25px 0;
+    
+}
+.we-are-gamer_container h3{
+    color: var(--text-gray);
+    font-weight: 400;
+}
+.we-are-gamer_container .h3{
+    font-weight: 900;
+}
+.we-are-gamer_container img{
+    width: 100%;
+}
+/* .online-game section start here  */
+.online-game section{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0;
+}
+.center{
+    text-align: center;
+}
+.img-container{
+    position: relative;
+    overflow: hidden;
+    padding: 20px 0;
+}
+.img-container > img{
+    display: block;
+    object-fit: cover;
+    object-position: center;
+}
+.content{
+    position: absolute;
+    inset: 0;
+    font-size: 2rem;
+    padding: 1rem;
+    background: rgba(255, 255, 255, .4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img-container > img,
+.img-container > .content{
+    transition: 200ms ease-in-out;
+}
+.img-container:hover > img.blur{
+    filter: brightness(50%);
+}
+.img-container > .content.fade{
+    opacity: 0;
+}
+.img-container:hover > .content.fade{
+    opacity: 1;
+}
+/* play instantly sections  start here  */
+.play-instantly{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: right;
+    gap: 300px;
+    padding: 100px 0;
+}
+.play-instantly p, h2{
+    color: var(--primary-color-);
+}
+.play-instantly p{
+    padding: 25px 0; 
+}
+.play-instantly section{
+    flex: 1;
+}
+.position-rel{
+    position: relative;
+}
+.position-abs {
+    bottom: -90px;
+    position: absolute;
+    left: -167px;
+}
+/* play online sections  start here  */
+.play-online{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: right;
+    gap: 300px;
+    padding: 100px 0;
+}
+.play-online p, h2{
+    color: var(--primary-color-);
+}
+.play-online p{
+    padding: 25px 0; 
+}
+.play-online section{
+    flex: 1;
+}
+.p-rel{
+    position: relative;
+}
+.p-abs {
+    bottom: -90px;
+    position: absolute;
+    right: -167px;
+}
+/* Careers section start here  */
+.careers{
+    height: 600px;
+    background-image: url(./images/Vector\ 2.png), url(./images/Rectangle\ .png);
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+/* footer section start here  */
