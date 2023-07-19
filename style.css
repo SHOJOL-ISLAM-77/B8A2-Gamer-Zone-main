@@ -18,9 +18,9 @@
 }
 :root{
     --text-gray: #534C64;
-    --primary-color-: #0B0223;
+    --primary-color: #0B0223;
 }
-h1{
+.banner h1{
     font-size: 95px;
     font-weight: 900;
     background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
@@ -29,6 +29,10 @@ h1{
     -webkit-text-fill-color: transparent;
     padding: 20px 0;
 }
+strong {
+    font-weight: 900;
+}
+
 h2{
     font-size: 48px;
 }
@@ -65,7 +69,7 @@ nav li{
     padding-left: 50px;
 }
 nav li a{
-    color: var(--primary-color-);
+    color: var(--primary-color);
 }
 nav button{
     padding: 20px;
@@ -88,8 +92,6 @@ nav  button i{
 .banner{
     background-image: url(./images/Group\ 14.png);
     background-repeat: no-repeat;
-    bottom: 0;
-    left: 0;
 }
 .banner p{
     padding: 7px 0px 7px 30px;
@@ -150,13 +152,14 @@ nav  button i{
 .we-are-gamer_container img{
     width: 100%;
 }
+
 /* .online-game section start here  */
 .online-game section{
     display: flex;
     justify-content: space-between;
     padding: 50px 0;
 }
-.center h2,p{
+.online-game .center {
     text-align: center;
 }
 .img-container{
@@ -202,7 +205,7 @@ nav  button i{
     padding: 100px 0;
 }
 .play-instantly p, h2{
-    color: var(--primary-color-);
+    color: var(--primary-color);
 }
 .play-instantly p{
     padding: 25px 0; 
@@ -227,8 +230,8 @@ nav  button i{
     gap: 300px;
     padding: 100px 0;
 }
-.play-online p, h2{
-    color: var(--primary-color-);
+.play-online  p , .play-online  h2  {
+    color: var(--primary-color);
     text-align: left;
 }
 .play-online p{
@@ -247,25 +250,18 @@ nav  button i{
 }
 /* Careers section start here  */
 .careers{
-    background-image:  url(./images/Rectangle\ .png);
+    background-image:   url(./images/Group\ 65.png), url(./images/Rectangle\ .png);
     background-repeat:  no-repeat ;
-    background-position: center;
-    background-size: cover;
+    background-position: right ;
     color: #fff;
-}
-.careers_container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.careers_container section{
-    width: 50%;
+    padding: 100px 0;
 }
 .careers_flex{
     padding: 40px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 50%;
 }
 .careers h2{
     color: #fff;
@@ -297,3 +293,330 @@ nav  button i{
     flex-wrap: wrap;
 }
 /* footer section start here  */
+footer{
+    text-align: center;
+    background-color: #0B0223;
+    padding: 130px 0;
+}
+footer h2{
+    display: inline;
+    color: #fff;
+}
+footer li{
+    display: inline;
+    padding:0 40px;
+}
+footer > div{
+    margin-top: 65px;
+}
+footer li > a{
+    color: #fff;
+}
+footer > p{
+    color: #fff;
+    padding: 30px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+    /* header section start here  */
+    nav{
+        flex-direction: column;
+        text-align: center;
+    }
+    nav li{
+        display: block;
+        padding: 30px 0;
+    }
+    /* main section start here  */
+    /* banner section start here  */
+    .banner-container {
+        flex-direction: column-reverse;
+    }
+    .banner{
+        background-image:none;
+    }
+    .banner_left-side{
+        background-image: url(./images/Group\ 14.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 100px ;
+        text-align: center;
+    }
+    .banner p{
+        text-align: left;
+    }
+    .banner img{
+        width: 100%;
+    }
+    /* we are gamer section start here  */
+    .we-are-gamer{
+        background-color: #FFF9FC;
+    }
+    .we-are-gamer_container{
+        flex-direction: column;
+        text-align: center;
+        padding: 100px 0;
+    }
+    .we-are-gamer_container section{
+        width: auto;
+    }
+    /* .online-game section start here  */
+    .online-game section{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        padding: 50px 0;
+        text-align: center;
+    }
+    .img-container{
+        width: 100%;
+    }
+    .content{
+        display: none;
+    }
+    img{
+        margin: auto;
+        width: 80%;
+    }
+    /* play instantly sections  start here  */
+    .play-instantly{
+        flex-direction: column;
+        text-align: center;
+        gap: 100px;
+        padding: 100px 0;
+    }
+    .position-rel{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .position-abs {
+    bottom: -63px;
+    left: -12px;
+    width: 40%;
+}
+    /* play online sections  start here  */
+    .play-online{
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 100px;
+        padding: 100px 0;
+    }
+    .play-online  p , .play-online  h2  {
+        text-align: center;
+    }
+    .p-rel{
+        width: 90%;
+        margin:0 auto;
+    }
+    .p-abs {
+        bottom: -70px;
+        right: -4px;
+        width: 40%;
+    }
+    /* Careers section start here  */
+    .careers{
+        display: none;
+    }
+    /* button section start here  */
+    .btn-list{
+        border-radius: 30px;
+        font-size: 10px;
+        padding: 10px;
+    }
+    .buttons{
+        padding: 10px 0;
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+    .btn-list img{
+        width: 30px;
+    }
+    /* footer section start here  */
+    footer{
+        text-align: center;
+        padding: 130px 0;
+    }
+    footer img{
+       width: 20%;
+       margin: auto;
+    }
+    footer li{
+        display: inline;
+        padding: 0 ;
+    }
+    footer > div{
+        margin-top: 65px;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 30px 10px;
+        justify-content: space-evenly;
+    }
+    footer > div >  li > a >img {
+        width: 70%;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 768px){
+    /* header section start here  */
+    nav{
+        justify-content: space-around;
+    }
+    nav li{
+        padding: 0 10px 0 30px ;
+    }
+    nav button{
+        padding: 15px 20px;
+    }
+    /* main section start here  */
+    /* banner section start here  */
+    .banner-container {
+        flex-direction: column-reverse;
+    }
+    .banner{
+        background-image:none;
+    }
+    .banner_left-side{
+        background-image: url(./images/Group\ 14.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 100px 0;
+        text-align: left;
+        width: 98%;
+    }
+    .banner p{
+        text-align: left;
+    }
+    .banner img{
+        width: 100%;
+    }
+    /* we are gamer section start here  */
+    .we-are-gamer{
+        background-color: #FFF9FC;
+    }
+    .we-are-gamer_container{
+        flex-direction: column;
+        text-align: center;
+        padding: 100px 0;
+    }
+    .we-are-gamer_container section{
+        width: auto;
+    }
+
+    /* .online-game section start here  */
+    .online-game section{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 50px 0;
+    text-align: center;
+    }
+    .img-container{
+        width: 100%;
+    }
+    .content{
+        display: none;
+    }
+    img{
+        margin: auto;
+        width: 80%;
+    }
+    /* play instantly sections  start here  */
+    .play-instantly{
+        flex-direction: column;
+        text-align: center;
+        gap: 100px;
+        padding: 100px 0;
+    }
+    .position-rel{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .position-abs {
+    bottom: -63px;
+    left: -12px;
+    width: 40%;
+}
+    /* play online sections  start here  */
+    .play-online{
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 100px;
+        padding: 100px 0;
+    }
+    .play-online  p , .play-online  h2  {
+        text-align: center;
+    }
+    .p-rel{
+        width: 90%;
+        margin:0 auto;
+    }
+    .p-abs {
+        bottom: -70px;
+        right: -4px;
+        width: 40%;
+    }
+    /* Careers section start here  */
+    .careers{
+        background-image:   url(./images/Group\ 65.png), url(./images/Rectangle\ .png);
+        background-repeat:  no-repeat ;
+        background-position: bottom ,top ;
+        background-size: contain , cover ;
+        color: #fff;
+        padding: 100px 0 625px 0;
+    }
+    .careers_flex{
+        padding: 40px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+    .careers h2{
+        color: #fff;
+        padding: 25px 0;
+    }
+    .careers button{
+        color: #F948B2;
+    }
+    /* button section start here  */
+    .btn-list{
+        border-radius: 30px;
+        font-size: 15px;
+        padding: 10px;
+    }
+    .buttons{
+        padding: 10px 0;
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+    .btn-list img{
+        width: 40px;
+    }
+    /* footer section start here  */
+    footer li{
+        padding:30px;
+    }
+    footer > div{
+        margin-top: 65px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    footer li > a{
+        color: #fff;
+    }
+    footer > p{
+        color: #fff;
+        padding: 30px;
+    }
+    footer img{
+        width: 50px;
+    }
+}
+
