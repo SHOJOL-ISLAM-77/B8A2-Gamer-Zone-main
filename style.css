@@ -566,13 +566,10 @@ footer > p{
         background-position: bottom ,top ;
         background-size: contain , cover ;
         color: #fff;
-        padding: 100px 0 625px 0;
+        padding: 100px 50px 625px 50px;
     }
     .careers_flex{
-        padding: 40px 0;
-        display: flex;
         justify-content: space-between;
-        align-items: center;
         width: 100%;
     }
     .careers h2{
